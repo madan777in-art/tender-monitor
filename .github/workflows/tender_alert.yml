@@ -2,11 +2,7 @@ name: Tender Alert Monitor
 
 on:
   schedule:
-    # Runs 4 times a day (UTC times = IST - 5:30)
-    - cron: '30 2 * * *'   # 8:00 AM IST
-    - cron: '30 8 * * *'   # 2:00 PM IST
-    - cron: '30 14 * * *'  # 8:00 PM IST
-    - cron: '30 23 * * *'  # 5:00 AM IST (early morning scan)
+     - cron: '0 * * * *'    # Every 1 hour
 
   # This button lets you run it MANUALLY anytime from GitHub website
   workflow_dispatch:
